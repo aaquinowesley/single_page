@@ -1,7 +1,7 @@
 @import url(//db.onlinewebfonts.com/c/3b62e4142e100992a53bc3c8fd657f1d?family=CalderW00-LC);
 
 /* Reset Css */
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -10,11 +10,12 @@
     font-family: "CalderW00-LC";
 }
 
-body{
+body {
     background-color: #4857AC;
+    font-size: calc(1px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
 }
 
-.header{
+.header {
     display: flex;
     margin: 1rem;
     align-items: center;
@@ -23,23 +24,23 @@ body{
     justify-content: center;
 }
 
-.header p span{
+.header p span {
     color: rgb(212, 212, 212);
 }
 
-.header button{
-    display:inline-block;
+.header button {
+    display: inline-block;
     border: none;
     cursor: pointer;
     color: white;
-    background-color:transparent;
+    background-color: transparent;
 }
 
-.header button img{
+.header button img {
     width: 11px;
 }
 
-.header button:hover{
+.header button:hover {
     transition: all .1s ease-in-out;
     scale: 1.1;
 }
@@ -48,64 +49,134 @@ body{
     float: right;
 } */
 
-.aside{
+.aside {
     float: left;
     color: white;
 }
 
-.container-category{
+.container-category {
     margin: 2.5rem;
 }
 
-.container-category .category ul{
+.container-category .category ul {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
 }
 
-.container-category .category ul li{
+.container-category .category ul li {
     display: flex;
 }
 
-.container-category .category ul li a{
+.container-category .category ul li a {
     display: flex;
     color: white;
 }
 
-.container-category .category ul li a:hover{
+.container-category .category ul li a:hover {
     transition: all .2s ease-in-out;
     text-decoration: line-through;
 }
 
-.aside .aside-card{
+.aside .aside-card {
     display: flex;
     margin-top: 1.3rem;
     border-radius: 10px;
     width: 250px;
     flex-direction: column;
     gap: 0.5rem;
+    -webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: shake-horizontal 5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both infinite;
     padding: 0.7rem;
     border: 1px solid rgb(255, 255, 255);
 }
 
-.aside-card h3{
+@-webkit-keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+@keyframes shake-horizontal {
+
+    0%,
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    10%,
+    30%,
+    50%,
+    70% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px);
+    }
+
+    20%,
+    40%,
+    60% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px);
+    }
+
+    80% {
+        -webkit-transform: translateX(8px);
+        transform: translateX(8px);
+    }
+
+    90% {
+        -webkit-transform: translateX(-8px);
+        transform: translateX(-8px);
+    }
+}
+
+.aside-card h3 {
     text-align: center;
 }
 
-.aside-card span{
+.aside-card span {
     font-weight: lighter;
     color: silver;
 }
 
 
-.container{
+.container {
     /* justify-content: center;
     align-items: center; */
     /* flex-wrap: wrap; */
     width: 100%;
 }
 
-.container .cards{
+.container .cards {
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -114,19 +185,20 @@ body{
     flex-wrap: wrap;
 }
 
-.cards .card{
+.cards .card {
     display: flex;
-    width: 25%;
+    width: 21vw;
     /* height: 250px; */
     justify-content: center;
     align-items: center;
+    word-break: break-word;
     flex-direction: column;
     background-color: #FFF;
 }
 
-.cards .card:hover{
-    transition: all .2s ease-in-out;
-    margin: 0.5rem;
+.cards .card:hover {
+    transition: all .5s ease-in-out;
+    margin: 5rem;
     scale: 1.1;
 }
 
@@ -134,32 +206,32 @@ body{
     width: 100%;
 }
 
-.cards .card .img-card img{
-    width: 100%;
+.cards .card .img-card img {
+    width: 21vw;
 }
 
-.tilte-card{
+.tilte-card {
     text-align: center;
 }
 
-.body-card{
+.body-card {
     display: flex;
-    color: rgb(206, 206, 206);
-    font-weight: 300;
+    color: rgb(134, 134, 134);
+    font-weight: 500;
 }
 
-.footer-card{
+.footer-card {
     display: flex;
     flex-direction: row;
 }
 
-.cards .card .footer-card{
+.cards .card .footer-card {
     display: flex;
     gap: 2rem;
     padding: 1rem;
 }
 
-.cards .card .footer-card span{
+.cards .card .footer-card span {
     border: 1px solid silver;
     color: silver;
 }
