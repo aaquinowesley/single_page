@@ -15,16 +15,15 @@ Fonte: CalderW00-LC
 <div align='center'>
   <div>
     <h2> Desktop </h2>
-    <img height='300px' width='auto' src='./preview.JPG'/>
+    <img height='100%' width='100%' src='./preview.jpg'/>
  </div>
   <div> 
-<!-- <h2> Mobile </h2>
-    <img height='300px' width='auto' src='' alt="ainda não está responsivo"/>
+<h2> Mobile </h2>
+<!--     <img height='300px' width='auto' src='' alt="ainda não está responsivo"/> -->
+    ⚠ Obs: A responsividade não foi concluída!
   </div>
-</div> -->
+</div>
 
 # 🔗 Link Para Acessar 
 
 https://aaquinowesley.github.io/single_page/
-
-⚠ Obs: Falta realizar alguns ajustes na responsividade.
